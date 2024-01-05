@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "SF";
+  user-select: none;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 100px;
+}
+
+body {
+  background: #ffd8d8;
+}
+
+.result {
+  margin-bottom: 15px;
+  width: 100%;
+  height: 65px;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  background: #ebdbdb;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.result span {
+  margin-right: 40px;
+  font-size: 35px;
+  color: rgb(85, 85, 85);
+  user-select: text;
+  cursor: pointer;
+}
+
+.calculator {
+  padding: 30px;
+  border-radius: 40px;
+  width: 360px;
+  height: 600px;
+  background: #ffefef;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+.button {
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  background: #ffd8d8;
+  margin: 10px;
+  width: 75px;
+  height: 75px;
+  font-size: 35px;
+  color: rgb(85, 85, 85);
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #f5cfcf;
+}
+
+.operationButton {
+  background: #ff7b005d;
+}
+
+.operationButton:hover {
+  background: #ec720079;
+}
+
+.zero {
+  border-radius: 35px;
+  width: 180px;
+}
+
+@font-face {
+  font-family: "SF";
+  src: url("fonts/SFProText-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
