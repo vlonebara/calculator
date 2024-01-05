@@ -28,6 +28,7 @@ body {
   display: flex;
   justify-content: end;
   align-items: center;
+  overflow: auto;
 }
 
 .result span {
