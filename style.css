@@ -33,7 +33,7 @@ body {
 
 .result span {
   margin-right: 40px;
-  font-size: 35px;
+  font-size: 40px;
   color: rgb(85, 85, 85);
   user-select: text;
   cursor: pointer;
@@ -55,7 +55,7 @@ body {
   margin: 10px;
   width: 75px;
   height: 75px;
-  font-size: 35px;
+  font-size: 40px;
   color: rgb(85, 85, 85);
   box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
   cursor: pointer;
