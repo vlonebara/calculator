@@ -41,18 +41,17 @@ body {
 .calculator {
   padding: 30px;
   border-radius: 40px;
-  border: solid #ebdbdb 10px;
   width: 380px;
   height: 620px;
   background: #ebfaff;
-  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 0px 0px 20px rgba(255, 180, 180, 0.2);
 }
 .button {
   border-radius: 50%;
   outline: none;
   border: none;
-  background: #ffd8d8;
-  margin: 10px;
+  background: #dbd8ff;
+  margin: 13px;
   width: 75px;
   height: 75px;
   font-size: 38px;
@@ -62,15 +61,15 @@ body {
 }
 
 .button:hover {
-  background: #f5cfcf;
+  background: #cecbf0;
 }
 
 .operationButton {
-  background: #ff7b005d;
+  background: #b820ff50;
 }
 
 .operationButton:hover {
-  background: #ec720079;
+  background: #7c15ac62;
 }
 
 .zero {
