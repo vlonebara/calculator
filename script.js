@@ -17,12 +17,14 @@ btns.map((button) => {
         b = "";
         break;
       case "=":
-        equalAudio.play();
         if (a !== "" && b !== "") {
+          equalAudio.play();
           display.innerText = eval(a + operation + b);
           operation = "";
           a = display.innerText;
           b = "";
+          break;
+        } else {
           break;
         }
       case "+":
