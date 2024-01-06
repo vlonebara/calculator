@@ -13,7 +13,7 @@
 }
 
 body {
-  background: #ffd8d8;
+  background: #d0f4ff;
 }
 
 .result {
@@ -23,8 +23,8 @@ body {
   outline: none;
   border: none;
   border-radius: 30px;
-  background: #ebdbdb;
-  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  background: #d2dfe4;
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
   display: flex;
   justify-content: end;
   align-items: center;
@@ -33,18 +33,18 @@ body {
 
 .result span {
   margin-right: 40px;
-  font-size: 40px;
+  font-size: 38px;
   color: rgb(85, 85, 85);
-  user-select: text;
   cursor: pointer;
 }
 
 .calculator {
   padding: 30px;
   border-radius: 40px;
-  width: 360px;
-  height: 600px;
-  background: #ffefef;
+  border: solid #ebdbdb 10px;
+  width: 380px;
+  height: 620px;
+  background: #ebfaff;
   box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
 }
 .button {
@@ -55,7 +55,7 @@ body {
   margin: 10px;
   width: 75px;
   height: 75px;
-  font-size: 40px;
+  font-size: 38px;
   color: rgb(85, 85, 85);
   box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
   cursor: pointer;
