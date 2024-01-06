@@ -64,6 +64,12 @@ btns.map((button) => {
 
 display.addEventListener("click", (e) => {
   if (display.innerText.length > 1) {
-    display.innerText = display.innerText.slice(0, -1);
+    if (operation === "") {
+      display.innerText = display.innerText.slice(0, -1);
+      a = e.target.innerText;
+    } else {
+      display.innerText = display.innerText.slice(0, -1);
+      b = e.target.innerText;
+    }
   }
 });
