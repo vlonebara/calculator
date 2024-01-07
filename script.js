@@ -1,5 +1,7 @@
 let display = document.querySelector(".display");
 let btns = Array.from(document.querySelectorAll(".button"));
+let switchThemeBtn = document.querySelector(".switchTheme");
+let content = Array.from(document.querySelectorAll(".light"));
 const btnAudio = new Audio("audio/btn.wav");
 const equalAudio = new Audio("audio/equal.wav");
 let operation = "";
@@ -9,7 +11,7 @@ let b = "";
 btns.map((button) => {
   button.addEventListener("click", (e) => {
     switch (e.target.innerText) {
-      case "AC":
+      case "ac":
         btnAudio.play();
         display.innerText = "0";
         operation = "";
@@ -71,5 +73,14 @@ display.addEventListener("click", (e) => {
       display.innerText = display.innerText.slice(0, -1);
       b = e.target.innerText;
     }
+  }
+});
+
+switchThemeBtn.addEventListener("click", (e) => {
+  const currentTheme = document.body.className;
+  if (currentTheme === "light") {
+    document.body.className = "dark";
+  } else {
+    document.body.className = "light";
   }
 });

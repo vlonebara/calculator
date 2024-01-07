@@ -6,14 +6,40 @@
   box-sizing: border-box;
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  padding: 100px;
+/* light theme colors */
+body.light {
+  --color-bg: #d0f4ff;
+  --color-bg-result: #d2dfe4;
+  --color-bg-calculator: #ebfaff;
+  --color-bg-button: #dbd8ff;
+  --color-bg-button-hover: #cecbf0;
+  --color-bg-operationButton: #b820ff50;
+  --color-bg-operationButton-hover: #7c15ac62;
+  --img-bg-switchThemeBtn: url("img/moon.png");
+}
+
+/* dark theme colors */
+body.dark {
+  --color-bg: #78949c;
+  --color-bg-result: #b8c4c9b2;
+  --color-bg-calculator: #8c979ba8;
+  --color-bg-button: #8479ff9a;
+  --color-bg-button-hover: #746ae2;
+  --color-bg-operationButton: #ae00ff73;
+  --color-bg-operationButton-hover: rgba(98, 16, 136, 0.514);
+  --img-bg-switchThemeBtn: url("img/sun.png");
 }
 
 body {
-  background: #d0f4ff;
+  background: var(--color-bg);
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 100px;
 }
 
 .result {
@@ -23,7 +49,7 @@ body {
   outline: none;
   border: none;
   border-radius: 30px;
-  background: #d2dfe4;
+  background: var(--color-bg-result);
   box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
   display: flex;
   justify-content: end;
@@ -43,14 +69,14 @@ body {
   border-radius: 40px;
   width: 373px;
   height: 623px;
-  background: #ebfaff;
+  background: var(--color-bg-calculator);
   box-shadow: 0px 0px 0px 10px rgba(255, 180, 180, 0.2);
 }
 .button {
   border-radius: 50%;
   outline: none;
   border: none;
-  background: #dbd8ff;
+  background: var(--color-bg-button);
   margin: 13px;
   width: 75px;
   height: 75px;
@@ -61,21 +87,37 @@ body {
 }
 
 .button:hover {
-  background: #cecbf0;
+  background: var(--color-bg-button-hover);
 }
 
 .operationButton {
-  background: #b820ff50;
+  background: var(--color-bg-operationButton);
 }
 
 .operationButton:hover {
-  background: #7c15ac62;
+  background: var(--color-bg-operationButton-hover);
 }
 
 .zero {
   border-radius: 35px;
   width: 180px;
 }
+
+.switchTheme {
+  height: 50px;
+  width: 50px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 15px;
+  border-radius: 50%;
+  background: var(--img-bg-switchThemeBtn);
+  background-size: cover;
+}
+
+/* ============================================================ */
+/* fonts */
+/* ============================================================ */
 
 @font-face {
   font-family: "SF";
