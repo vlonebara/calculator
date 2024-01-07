@@ -12,9 +12,9 @@ body.light {
   --color-bg-result: #ebf9ff;
   --color-bg-calculator: rgb(255,255,255);
   --color-bg-button: rgba(0, 119, 255, 0.514);
-  --color-bg-button-hover: #cecbf0;
+  --color-bg-button-hover: rgba(0, 71, 151, 0.514);
   --color-bg-operationButton: #b820ff50;
-  --color-bg-operationButton-hover: #7c15ac62;
+  --color-bg-operationButton-hover: rgba(98, 12, 138, 0.384);
   --img-bg-switchThemeBtn: url("img/moon.png");
   --color-text: rgb(85, 85, 85);
 }
@@ -24,12 +24,12 @@ body.dark {
   --color-bg: rgb(20,20,20);
   --color-bg-result: #8b9092b2;
   --color-bg-calculator: rgb(34,34,34);
-  --color-bg-button: rgb(0,119,255);
-  --color-bg-button-hover: #746ae2;
-  --color-bg-operationButton: #ae00ff;
-  --color-bg-operationButton-hover: rgba(98, 16, 136, 0.514);
+  --color-bg-button: rgba(0, 119, 255, 0.658);
+  --color-bg-button-hover: rgba(0, 91, 194, 0.616);
+  --color-bg-operationButton: #ae00ff98;
+  --color-bg-operationButton-hover: #7e00b99a;
   --img-bg-switchThemeBtn: url("img/sun.png");
-  --color-text: rgb(184, 184, 184);
+  --color-text: rgba(184, 184, 184, 0.877);
 }
 
 body {
