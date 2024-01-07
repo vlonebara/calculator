@@ -8,6 +8,8 @@ let operation = "";
 let a = "";
 let b = "";
 
+// calculator logic
+
 btns.map((button) => {
   button.addEventListener("click", (e) => {
     switch (e.target.innerText) {
@@ -64,6 +66,8 @@ btns.map((button) => {
   });
 });
 
+// erasing last number
+
 display.addEventListener("click", (e) => {
   if (display.innerText.length > 1) {
     if (operation === "") {
@@ -75,6 +79,8 @@ display.addEventListener("click", (e) => {
     }
   }
 });
+
+// switch theme
 
 switchThemeBtn.addEventListener("click", (e) => {
   const currentTheme = document.body.className;
