@@ -8,26 +8,28 @@
 
 /* light theme colors */
 body.light {
-  --color-bg: #d0f4ff;
-  --color-bg-result: #d2dfe4;
+  --color-bg: #d4f5ff;
+  --color-bg-result: #ebf9ff;
   --color-bg-calculator: #ebfaff;
   --color-bg-button: #dbd8ff;
   --color-bg-button-hover: #cecbf0;
   --color-bg-operationButton: #b820ff50;
   --color-bg-operationButton-hover: #7c15ac62;
   --img-bg-switchThemeBtn: url("img/moon.png");
+  --color-text: rgb(85, 85, 85);
 }
 
 /* dark theme colors */
 body.dark {
-  --color-bg: #78949c;
-  --color-bg-result: #b8c4c9b2;
-  --color-bg-calculator: #8c979ba8;
-  --color-bg-button: #8479ff9a;
+  --color-bg: rgb(43, 43, 43);
+  --color-bg-result: #8b9092b2;
+  --color-bg-calculator: #80ddffa8;
+  --color-bg-button: #594aff9a;
   --color-bg-button-hover: #746ae2;
   --color-bg-operationButton: #ae00ff73;
   --color-bg-operationButton-hover: rgba(98, 16, 136, 0.514);
   --img-bg-switchThemeBtn: url("img/sun.png");
+  --color-text: rgb(51, 51, 51);
 }
 
 body {
@@ -60,7 +62,7 @@ body {
 .result span {
   margin-right: 40px;
   font-size: 38px;
-  color: rgb(85, 85, 85);
+  color: var(--color-text);
   cursor: pointer;
 }
 
@@ -81,7 +83,7 @@ body {
   width: 75px;
   height: 75px;
   font-size: 38px;
-  color: rgb(85, 85, 85);
+  color: var(--color-text);
   box-shadow: 0px 0px 10px 2px rgba(34, 60, 80, 0.2);
   cursor: pointer;
 }
