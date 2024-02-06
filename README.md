@@ -1,1 +1,1 @@
-<a href="https://vlonebaracalculator.netlify.app/">Open</a>
+<a href="https://vlonebaracalculator.netlify.app/">View</a>
