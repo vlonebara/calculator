@@ -1,18 +1,16 @@
-let display = document.querySelector('.display')
-let btns = Array.from(document.querySelectorAll('.button'))
-let switchThemeBtn = document.querySelector('.switchTheme')
-let helpBtn = document.querySelector('.helpButton')
-let content = Array.from(document.querySelectorAll('.light'))
-let helpWindow = document.querySelector('.helpWindow')
+const display = document.querySelector('.display')
+const btns = Array.from(document.querySelectorAll('.button'))
+const switchThemeBtn = document.querySelector('.switchTheme')
+const helpBtn = document.querySelector('.helpButton')
+const helpWindow = document.querySelector('.helpWindow')
 const btnAudio = new Audio('audio/btn.wav')
 const equalAudio = new Audio('audio/equal.wav')
+const closeHelpWindowButton = document.querySelector('.closeHelpWindowButton')
+
 let operation = ''
 let a = ''
 let b = ''
 let displayHelpWindow = false
-let closeHelpWindowButton = document.querySelector('.closeHelpWindowButton')
-
-// calculator logic
 
 btns.map(button => {
 	button.addEventListener('click', e => {
@@ -70,8 +68,6 @@ btns.map(button => {
 	})
 })
 
-// erasing last number
-
 display.addEventListener('click', e => {
 	if (display.innerText.length > 1) {
 		if (operation === '') {
@@ -84,32 +80,17 @@ display.addEventListener('click', e => {
 	}
 })
 
-// switch theme
-
-switchThemeBtn.addEventListener('click', e => {
-	const currentTheme = document.body.className
-	if (currentTheme === 'light') {
-		document.body.className = 'dark'
-	} else {
-		document.body.className = 'light'
-	}
+switchThemeBtn.addEventListener('click', () => {
+	document.body.classList.toggle('dark')
+	document.body.classList.toggle('light')
 })
 
-//help button
-
-helpBtn.addEventListener('click', e => {
-	if (displayHelpWindow === false) {
-		helpWindow.style = 'display: unset'
-		displayHelpWindow = true
-	} else {
-		helpWindow.style = 'display: none'
-		displayHelpWindow = false
-	}
+helpBtn.addEventListener('click', () => {
+	helpWindow.style.display = displayHelpWindow ? 'none' : 'unset'
+	displayHelpWindow = !displayHelpWindow
 })
 
-//close help window button
-
-closeHelpWindowButton.addEventListener('click', e => {
-	helpWindow.style = 'display: none'
+closeHelpWindowButton.addEventListener('click', () => {
+	helpWindow.style.display = 'none'
 	displayHelpWindow = false
 })

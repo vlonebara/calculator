@@ -1,3 +1,22 @@
+@media (max-height: 735px), (max-width: 390px) {
+	.calculator {
+		height: 523px;
+		width: 320px;
+	}
+	.button {
+		width: 55px;
+		height: 55px;
+		font-size: 28px;
+	}
+}
+
+@font-face {
+	font-family: 'SF';
+	src: url('fonts/SFProText-Bold.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -73,36 +92,19 @@ body {
 .calculator {
 	padding: 30px;
 	border-radius: 40px;
-	@media (max-height: 735px) {
-		height: 523px;
-		width: 320px;
-	}
-	@media (max-width: 390px) {
-		height: 523px;
-		width: 320px;
-	}
 	width: 373px;
 	height: 623px;
 	background: var(--color-bg-calculator);
 	box-shadow: 0px 0px 10px 2px rgba(34, 60, 80, 0.2);
 	transition: 0.5s;
 }
+
 .button {
 	border-radius: 50%;
 	outline: none;
 	border: none;
 	background: var(--color-bg-button);
 	margin: 13px;
-	@media (max-height: 735px) {
-		width: 55px;
-		height: 55px;
-		font-size: 28px;
-	}
-	@media (max-width: 390px) {
-		width: 55px;
-		height: 55px;
-		font-size: 28px;
-	}
 	width: 75px;
 	height: 75px;
 	font-size: 38px;
@@ -126,28 +128,10 @@ body {
 
 .zero {
 	border-radius: 35px;
-	@media (max-height: 735px) {
-		width: 145px;
-	}
-	@media (max-width: 390px) {
-		width: 145px;
-	}
 	width: 180px;
 }
 
-.switchTheme {
-	height: 50px;
-	width: 50px;
-	border: none;
-	outline: none;
-	cursor: pointer;
-	margin: 15px;
-	border-radius: 50%;
-	background: var(--img-bg-switchThemeBtn);
-	background-size: cover;
-	transition: 0.5s;
-}
-
+.switchTheme,
 .helpButton {
 	height: 50px;
 	width: 50px;
@@ -156,9 +140,17 @@ body {
 	cursor: pointer;
 	margin: 15px;
 	border-radius: 50%;
+	transition: 0.5s;
+}
+
+.switchTheme {
+	background: var(--img-bg-switchThemeBtn);
+	background-size: cover;
+}
+
+.helpButton {
 	background: url('img/help.png');
 	background-size: cover;
-	transition: 0.5s;
 }
 
 .buttons {
@@ -200,11 +192,4 @@ body {
 	box-shadow: 0px 0px 10px 2px rgba(34, 60, 80, 0.2);
 	cursor: pointer;
 	transition: 0.5s;
-}
-
-@font-face {
-	font-family: 'SF';
-	src: url('fonts/SFProText-Bold.ttf') format('truetype');
-	font-style: normal;
-	font-weight: normal;
 }
