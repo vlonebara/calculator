@@ -73,6 +73,14 @@ body {
 .calculator {
 	padding: 30px;
 	border-radius: 40px;
+	@media (max-height: 735px) {
+		height: 523px;
+		width: 320px;
+	}
+	@media (max-width: 390px) {
+		height: 523px;
+		width: 320px;
+	}
 	width: 373px;
 	height: 623px;
 	background: var(--color-bg-calculator);
@@ -85,6 +93,16 @@ body {
 	border: none;
 	background: var(--color-bg-button);
 	margin: 13px;
+	@media (max-height: 735px) {
+		width: 55px;
+		height: 55px;
+		font-size: 28px;
+	}
+	@media (max-width: 390px) {
+		width: 55px;
+		height: 55px;
+		font-size: 28px;
+	}
 	width: 75px;
 	height: 75px;
 	font-size: 38px;
@@ -108,6 +126,12 @@ body {
 
 .zero {
 	border-radius: 35px;
+	@media (max-height: 735px) {
+		width: 145px;
+	}
+	@media (max-width: 390px) {
+		width: 145px;
+	}
 	width: 180px;
 }
 
