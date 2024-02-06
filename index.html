@@ -7,12 +7,27 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="light">
+    <div class="buttons">
+      <div class="theme">
+        <button class="switchTheme"></button>  
+      </div>
+      <div class="help">
+        <button class="helpButton"></button>  
+      </div>
+    </div>
     <div class="container">
+      <div class="helpWindow hidden">
+        <p>help</p>
+        <p>theme button - switch theme to dark and reverse.</p>
+        <p>help button - open/close this menu.</p>
+        <p>click on a number - erase the last digit.</p>
+        <button class="closeHelpWindowButton">close</button>
+      </div>
       <div class="calculator">
         <div class="result">
           <span class="display">0</span>
           </div>
-          <button class="button operationButton">ac</butto>
+          <button class="button operationButton">ac</button>
           <button class="button operationButton">+</button>
           <button class="button operationButton">-</button>
           <button class="button">1</button>
@@ -26,9 +41,6 @@
           <button class="button">9</button>
           <button class="button zero">0</button>
           <button class="button operationButton">=</button>
-        </div>
-        <div class="theme">
-          <button class="switchTheme"></button>  
         </div>
       </div>
     </div>
