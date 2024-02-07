@@ -1,1 +1,1 @@
-https://vlonebara-qrcodegeneratror.netlify.app/
+https://vlonebaracalculator.netlify.app/
