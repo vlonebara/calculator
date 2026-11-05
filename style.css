@@ -12,7 +12,7 @@
 
 @font-face {
 	font-family: 'SF';
-	src: url('fonts/SFProText-Bold.ttf') format('truetype');
+	src: url('assets/fonts/SFProText-Bold.ttf') format('truetype');
 	font-style: normal;
 	font-weight: normal;
 }
@@ -34,7 +34,7 @@ body.light {
 	--color-bg-button-hover: rgba(0, 71, 151, 0.514);
 	--color-bg-operationButton: #b820ff50;
 	--color-bg-operationButton-hover: rgba(98, 12, 138, 0.384);
-	--img-bg-switchThemeBtn: url('img/moon.png');
+	--img-bg-switchThemeBtn: url('assets/img/moon.png');
 	--color-text: rgb(85, 85, 85);
 }
 
@@ -47,7 +47,7 @@ body.dark {
 	--color-bg-button-hover: rgba(0, 91, 194, 0.616);
 	--color-bg-operationButton: #ae00ff98;
 	--color-bg-operationButton-hover: #7e00b99a;
-	--img-bg-switchThemeBtn: url('img/sun.png');
+	--img-bg-switchThemeBtn: url('assets/img/sun.png');
 	--color-text: rgba(184, 184, 184, 0.877);
 }
 
@@ -149,7 +149,7 @@ body {
 }
 
 .helpButton {
-	background: url('img/help.png');
+	background: url('assets/img/help.png');
 	background-size: cover;
 }
 

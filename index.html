@@ -8,8 +8,8 @@
 	</head>
 	<body class="light">
 		<div class="buttons">
-			<button class="switchTheme"></button>
-			<button class="helpButton"></button>
+			<button class="switchTheme" type="button" aria-label="Переключить тему"></button>
+			<button class="helpButton" type="button" aria-label="Открыть справку" aria-expanded="false"></button>
 		</div>
 		<div class="container">
 			<div class="helpWindow hidden">
@@ -17,7 +17,7 @@
 				<p>theme button - switch theme to dark and reverse.</p>
 				<p>help button - open/close this menu.</p>
 				<p>click on a number - erase the last digit.</p>
-				<button class="closeHelpWindowButton">close</button>
+				<button class="closeHelpWindowButton" type="button">close</button>
 			</div>
 			<div class="calculator">
 				<div class="result">
@@ -39,6 +39,6 @@
 				<button class="button operationButton">=</button>
 			</div>
 		</div>
-		<script src="script.js"></script>
+		<script src="app.js"></script>
 	</body>
 </html>
